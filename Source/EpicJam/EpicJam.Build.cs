@@ -7,6 +7,7 @@ public class EpicJam : ModuleRules
 {
 	public EpicJam(ReadOnlyTargetRules Target) : base(Target)
 	{
+		PrivateDependencyModuleNames.AddRange(new string[] {  });
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { 
@@ -14,16 +15,19 @@ public class EpicJam : ModuleRules
 			"CoreUObject",
 			"Engine",
 			"InputCore",
-			"EnhancedInput"
+			"Mover",
+			"MoverExamples",
+			"EnhancedInput",
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] {
-			
-		});
+		/*PrivateDependencyModuleNames.AddRange(new string[] {
+			"Mover"
+		});*/
 		
 		PublicIncludePaths.AddRange( new string[] {
 			Path.Combine(ModuleDirectory, "Core/public"),
 			Path.Combine(ModuleDirectory, "Examples/public"),
+			Path.Combine(ModuleDirectory, "PlayerActions/public"),
 		});
 
 		// Uncomment if you are using Slate UI

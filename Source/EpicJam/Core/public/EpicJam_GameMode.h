@@ -7,7 +7,7 @@
 #include "EpicJam_GameMode.generated.h"
 
 UCLASS(Blueprintable)
-class EPICJAM_API AEpicJam_GameMode : public AGameModeBase
+class EPICJAM_API AEpicJam_GameMode : public AGameMode
 {
 	GENERATED_BODY()
 	

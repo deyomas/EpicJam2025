@@ -53,7 +53,7 @@ public:
 
 
 	//============================
-	// Internal
+	// Implementation
 	//============================
 protected:
 
